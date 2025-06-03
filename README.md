@@ -1,4 +1,4 @@
-# 🧠 Earthly Communication: An Emotional OS
+# Earthly Communication: An Emotional OS
 
 **A slow tool for fast minds.**  
 *Built in Rust. Written in parallel with the essay series on [smolnero.com](https://smolnero.com).*
