@@ -7,6 +7,7 @@ pub struct Intent {
     pub value: f32,			          // Optional weight or intesisty
 }
 
+// Core struct for storing and managing ALL recorded intents
 pub struct IntentTracker {
-	intents: HasMap<String, Intent>,  // Using a HashMap for label-based access
+	intents: HashMap<String, Intent>,  // Using a HashMap for label-based access
 }
