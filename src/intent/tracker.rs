@@ -12,7 +12,7 @@ pub struct IntentTracker {
 	intents: HashMap<String, Intent>,  // Using a HashMap for label-based access
 }
 
-// Creates new empty tracker 
+// Creates new empty tracker
 impl IntentTracker {
 	pub fn new() -> Self {
 		Self {
