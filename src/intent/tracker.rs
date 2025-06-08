@@ -26,7 +26,22 @@ impl IntentTracker {
 			timestamp: timestamp.to_string(),
 			value,
 		};
-		self.intents.insert(label.to_string(), intents);
-		
+		self.intents.insert(label.to_string(), intents);	
+	}
+
+	// Remove an intent from the log
+	pub fn discard(&mut self, label: &str) {
+		self.intents.remove(label);
+	}
+
+	// Print all retained intents - acts as a simple inspection tool
+	pub	fn inspect(&self) {
+		println!("\n-- Current intent State ---");
+		for intnet in self.intents.values() {
+			println! (
+				"[{}] @ {} -> value: {}",
+				intent,label, intent.timestamp, intent.value
+			);
+		}
 	}
 }
