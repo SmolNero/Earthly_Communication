@@ -20,8 +20,13 @@ impl IntentTracker {
 		}
 	}
 
-
-
-
-
+	pub fn record(&mut self, label: &str, timestamp: &str, value: f32){
+		let intent = Intent {
+			label: label.to_string(),
+			timestamp: timestamp.to_string(),
+			value,
+		};
+		self.intents.insert(label.to_string(), intents);
+		
+	}
 }
